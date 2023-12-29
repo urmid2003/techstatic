@@ -47,47 +47,144 @@ const Navbar = () => {
   }, []); // Empty dependency array ensures the effect runs once on mount
 
   return (
-    <nav id="navbar" className='navbar'>
-      <button className="hamburger">
+    <nav id="navbar">
+    <div class="nav-container">
+      <button class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
-      <div className='innerstyle'>
-        <div>
-          <a className="nav-link" href="/about">Events</a>
+
+      <div class="menu">
+        <div class="nav-item">
+          <a aria-label="Link to Home Page" href="./index.html">Home</a>
         </div>
-        <div>
-          <a className="nav-link" href="/about">Gallery</a>
+        <div class="nav-item">
+          <a
+            aria-label="Link to Contact Us Page"
+            href="./pages/Contact/index.html"
+            >Contact</a
+          >
         </div>
-        <div>
-          <a className="nav-link" href="/about">Department</a>
+        <div class="nav-item">
+          <a
+            href="http://linktr.ee/malharfest"
+            aria-label="Link to Announcements Page on Linktree"
+            >Announcements</a
+          >
         </div>
-        <div>
-          <a className="nav-link" href="/about">Sponsors</a>
-        </div>
-      </div>
-      <div className="mobile-menu">
-          <a aria-label="Link to Home Page" href="#">Home</a>
-          <a href="#" aria-label="Link to Contact Us Page"
+        <div class="nav-item">
+          <a href="./pages/Events/index.html" aria-label="Link to Events Page"
             >Events</a
           >
+        </div>
+        <div class="nav-item">
           <a
-            href="#"
-            aria-label="Link to Announcements Page on Linktree"
-            >Gallery</a
+            href="https://blog.malharfest.in"
+            aria-label="Link to Official Malhar Blog"
+            >Blog</a
           >
-          <a href="# " aria-label="Link to Events Page"
-            >Department</a
+        </div>
+        <div class="nav-item">
+          <a
+            aria-label="Link to Conclave Page"
+            href="./pages/Conclave/index.html"
+            >Conclave</a
           >
-         
-          <a aria-label="Link to Sponsors Page" href="#"
+        </div>
+        <div class="nav-item">
+          <a
+            aria-label="Link to Merchandise Gallery"
+            href="./pages/Merch/index.html"
+            >Merchandise</a
+          >
+        </div>
+        <div class="nav-item">
+          <a
+            aria-label="Link to Workforce Page"
+            href="./pages/Workforce/index.html"
+            >Workforce</a
+          >
+        </div>
+
+        <div class="nav-item">
+          <a
+            aria-label="Link to Sponsors Page"
+            href="./pages/Sponsor/index.html"
             >Sponsors</a
           >
+        </div>
+
+        <div class="nav-item">
+          <a
+            aria-label="Link to Taal Page"
+            href="./pages/Taal/index.html"
+            >Taal</a
+          >
+
           
         </div>
-    </nav>
+        <div class="nav-item">
+          <a aria-label="Link to Results Page" href="./pages/Result/index.html"> Results</a>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <a aria-label="Link to Home Page" href="./index.html">Home</a>
+        <a
+          aria-label="Link to Contact Us Page"
+          href="./pages/Contact/index.html"
+          >Contact</a
+        >
+        <a
+          href="http://linktr.ee/malharfest"
+          aria-label="Link to Announcements Page on Linktree"
+          >Announcements</a
+        >
+        <a href="./pages/Events/index.html" aria-label="Link to Events Page"
+          >Events</a
+        >
+        <a
+          href="https://blog.malharfest.in"
+          aria-label="Link to Official Malhar Blog"
+          >Blog</a
+        >
+        <a
+          aria-label="Link to Conclave Page"
+          href="./pages/Conclave/index.html"
+          >Conclave</a
+        >
+        <a
+          aria-label="Link to Merchandise Gallery"
+          href="./pages/Merch/index.html"
+          >Merchandise</a
+        >
+        <a
+          aria-label="Link to Workforce Page"
+          href="./pages/Workforce/index.html"
+          >Workforce</a
+        >
+        <a
+          aria-label="Link to Workforce Page"
+          href="./pages/Sponsor/index.html"
+          >Sponsors</a
+        >
+        <a
+          aria-label="Link to Taal Page"
+          href="./pages/Taal/index.html"
+          >Taal</a
+        >
+        <a
+          aria-label="Link to Results page"
+          href="./pages/Result/index.html"
+          >Results</a
+        >
+        
+      
+      </div>
+    </div>
+  </nav>
+
   );
 };
 
